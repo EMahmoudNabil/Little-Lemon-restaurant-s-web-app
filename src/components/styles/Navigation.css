@@ -1,0 +1,38 @@
+.navigation ul {
+  display: flex;
+}
+
+.navigation ul li {
+  padding: 0 15px;
+  margin: 0;
+  list-style: none;
+  color: #000;
+  background-color: #f4ce14;
+  border-radius: 10px;
+  margin-right: 2px;
+  font-size: 20px;
+}
+
+.navigation ul li a {
+  font-size: smaller;
+  font-weight: 500;
+  color: #000;
+}
+
+.navigation ul li a:hover {
+  color: #495e57;
+}
+
+.navigation ul li .active-links.active {
+  color: #495e57;
+}
+
+.active-links {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .navigation {
+    display: none;
+  }
+}

@@ -1,25 +1,16 @@
-import "./App.css";
+import React from "react";
+import Home from "./routes/Home";
+import Reservations from "./routes/Reservations";
+
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <nav>
-        <img src="../image/Logo.svg" alt="Logo" />
-        <ul>
-          <li>
-            <a href="/home">Homepage</a>
-          </li>
-          <li>
-            <a href="/about">About Us</a>
-          </li>
-          <li>
-            <a href="/blog">Blog</a>
-          </li>
-        </ul>
-      </nav>
-      <header></header>
-      <main></main>
-      <footer></footer>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/reservations" element={<Reservations />} />
+      </Routes>
     </>
   );
 }
